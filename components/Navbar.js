@@ -11,7 +11,7 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
   return (
-    <nav className="sticky top-0 z-10 bg-gray-800 p-4 border-b border-gray-700">
+    <nav className="sticky top-0 z-20 border-b border-slate-800/80 bg-slate-950/95 px-4 py-4 backdrop-blur sm:px-8">
       <div className="container mx-auto flex justify-between items-center">
         {/* Hamburger Menu Button (Visible on Small Screens) */}
         <div className="flex items-center md:hidden">
@@ -41,7 +41,7 @@ const Navbar = () => {
         {/* Logo Title (Visible on Larger Screens) */}
         <Link
           href="/"
-          className="hidden md:block text-white text-xl font-extrabold hover:text-blue-600 hover:scale-105 transition-all"
+          className="hidden text-xl font-extrabold tracking-tight text-white transition-colors hover:text-cyan-300 md:block"
         >
           <span className="">Next</span>
           <span className="ml-1">Level</span>
@@ -58,19 +58,19 @@ const Navbar = () => {
         >
           <Link
             href="/"
-            className="text-white text-xl font-semibold hover:text-blue-600 hover:scale-105 transition-all py-2 px-4 block w-full text-center md:hidden rounded hover:bg-gray-700 duration-200"
+            className="block w-full rounded-lg px-4 py-2 text-center text-base font-semibold text-slate-300 transition-colors duration-200 hover:bg-slate-800 hover:text-cyan-300 md:hidden"
           >
             Home
           </Link>
           <Link
             href="/saved-prompts"
-            className="text-white text-xl font-semibold hover:text-blue-600 hover:scale-105 transition-all py-2 px-4 block w-auto text-center md:inline-block rounded hover:bg-gray-700 duration-200"
+            className="block w-auto rounded-lg px-4 py-2 text-center text-sm font-semibold text-slate-300 transition-colors duration-200 hover:bg-slate-800 hover:text-cyan-300 md:inline-block"
           >
             Saved Prompts
           </Link>
           <Link
             href="/add-prompt"
-            className="text-white text-xl font-semibold hover:text-blue-600 hover:scale-105 transition-all py-2 px-4 block w-auto text-center md:inline-block rounded hover:bg-gray-700 duration-200"
+            className="block w-auto rounded-lg px-4 py-2 text-center text-sm font-semibold text-slate-300 transition-colors duration-200 hover:bg-slate-800 hover:text-cyan-300 md:inline-block"
           >
             Add New Prompt
           </Link>
